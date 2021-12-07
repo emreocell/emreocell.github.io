@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    background: url('https://i.pinimg.com/originals/12/b2/3a/12b23a7752e8a7a4464c1ff5e596237f.gif');
+    background: url(background.png);
     background-size: cover;
     background-color:#464646;
 }
