@@ -12,7 +12,7 @@
     background-attachment: fixed;
     background-position: center center;
     background: url(background.png);
-    background-size: 100%;
+    background-size: auto;
     background-color:#464646;
 }
 
