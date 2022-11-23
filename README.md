@@ -1,3 +1,4 @@
 # emreocell.me || emreocell.github.io
-#This is my personal web site
+bu benim kişisel web sitem.
+<a href="emreocell.me" target="_blank"></a>
 
