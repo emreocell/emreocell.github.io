@@ -1,0 +1,43 @@
+# ============================================================
+# Yetenek Verileri — _data/skills.yml
+# ============================================================
+
+frontend:
+  - name: "HTML5"
+    level: 95
+  - name: "CSS3 / SASS"
+    level: 92
+  - name: "JavaScript"
+    level: 88
+  - name: "React"
+    level: 78
+  - name: "Vue.js"
+    level: 72
+  - name: "Three.js"
+    level: 65
+
+backend:
+  - name: "PHP"
+    level: 90
+  - name: "Node.js"
+    level: 80
+  - name: "MySQL"
+    level: 88
+  - name: "MongoDB"
+    level: 68
+  - name: "REST API"
+    level: 85
+  - name: ".NET"
+    level: 75
+
+app:
+  - name: "Java"
+    level: 85
+  - name: "C#"
+    level: 80
+  - name: "C++"
+    level: 70
+  - name: "C"
+    level: 75
+  - name: "Python"
+    level: 75

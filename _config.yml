@@ -1,0 +1,60 @@
+# ============================================================
+# Emre Öcel — Kişisel Portfolyo Sitesi
+# https://emreocell.github.io
+# ============================================================
+
+# ---- Site Settings ----
+title: "Emre Öcel | Computer Engineer & Web Developer"
+description: >-
+  Emre Öcel — Bilgisayar Mühendisi, Full Stack Web Geliştirici.
+  Webioo Dijital Ajans'ta modern web çözümleri geliştiriyorum.
+url: "https://emreocell.github.io"
+baseurl: ""
+lang: "tr"
+
+# ---- Author ----
+author:
+  name: "Emre Öcel"
+  email: "emreocell1219@gmail.com"
+  url: "https://emreocell.github.io"
+
+# ---- Social ----
+social:
+  github: "emreocell"
+  linkedin: "emreocel"
+
+# ---- Jekyll Config ----
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+timezone: Europe/Istanbul
+
+# ---- Plugins (GitHub Pages whitelist ONLY) ----
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# ---- Defaults ----
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      lang: "tr"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# ---- Exclude ----
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+  - .gitignore
+  - preview.html

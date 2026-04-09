@@ -1,0 +1,50 @@
+---
+layout: default
+title: "Blog | Emre Öcel"
+description: "Emre Öcel'in teknoloji, web geliştirme ve yazılım mühendisliği üzerine blog yazıları."
+permalink: /blog/
+lang: tr
+---
+
+<div class="blog-listing section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-i18n="blog.label">// Blog</span>
+      <h1 data-i18n="blog.allPosts">Tüm Blog Yazıları</h1>
+      <div class="section-divider"></div>
+      <p data-i18n="blog.subtitle">Teknoloji, geliştirme ve deneyimlerim hakkında yazıyorum.</p>
+    </div>
+
+    <div class="blog-grid">
+      {% for post in site.posts %}
+        <article class="blog-card" style="cursor: pointer;" onclick="window.location.href='{{ post.url | relative_url }}'">
+          {% if post.image %}
+          <div class="blog-card-image">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          </div>
+          {% endif %}
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span class="blog-card-date">{{ post.date | date: "%d.%m.%Y" }}</span>
+              {% if post.lang %}
+              <span class="blog-card-lang">{{ post.lang | upcase }}</span>
+              {% endif %}
+              {% if post.reading_time %}
+              <span class="blog-card-date">· {{ post.reading_time }} min</span>
+              {% endif %}
+            </div>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+            <a href="{{ post.url | relative_url }}" style="font-size: 0.85rem; font-weight: 500; margin-top: 0.75rem; display: inline-block;" data-i18n="blog.readMore">Devamını Oku →</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+
+    {% if site.posts.size == 0 %}
+    <div style="text-align: center; padding: 4rem 0;">
+      <p style="color: var(--text-tertiary); font-size: 1.1rem;">Henüz blog yazısı yok. Yakında!</p>
+    </div>
+    {% endif %}
+  </div>
+</div>

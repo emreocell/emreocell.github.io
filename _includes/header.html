@@ -1,0 +1,65 @@
+<a class="skip-link" href="#main-content" data-i18n="nav.skip">İçeriğe Geç</a>
+
+<header class="site-header" id="site-header" role="banner">
+  <div class="container">
+    <div class="header-inner">
+      <!-- Logo -->
+      <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="Ana Sayfa">
+        emre<span>.</span>öcel
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav" role="navigation" aria-label="Ana navigasyon">
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav.about">Hakkımda</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projeler</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Yetenekler</a></li>
+          <li><a href="{{ '/blog/' | relative_url }}" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
+        </ul>
+
+        <!-- Controls -->
+        <div class="header-controls">
+          <!-- Language Toggle -->
+          <button class="control-btn lang-toggle" id="lang-toggle" aria-label="Dili değiştir" title="TR / EN">
+            TR
+          </button>
+
+          <!-- Theme Toggle -->
+          <button class="control-btn theme-toggle" id="theme-toggle" aria-label="Tema değiştir" title="Tema Değiştir">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon-dark" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon-light" style="display:none" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"/>
+              <line x1="12" y1="1" x2="12" y2="3"/>
+              <line x1="12" y1="21" x2="12" y2="23"/>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+              <line x1="1" y1="12" x2="3" y2="12"/>
+              <line x1="21" y1="12" x2="23" y2="12"/>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Toggle -->
+          <button class="menu-toggle" id="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobil menü">
+  <a href="#about" data-i18n="nav.about">Hakkımda</a>
+  <a href="#projects" data-i18n="nav.projects">Projeler</a>
+  <a href="#skills" data-i18n="nav.skills">Yetenekler</a>
+  <a href="{{ '/blog/' | relative_url }}" data-i18n="nav.blog">Blog</a>
+  <a href="#contact" data-i18n="nav.contact">İletişim</a>
+</div>

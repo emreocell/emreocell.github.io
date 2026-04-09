@@ -1,0 +1,61 @@
+# Emre Öcel — Personal Portfolio
+
+> Computer Engineer & Full Stack Web Developer based in Turkey.
+> Fırat University Computer Engineering graduate working at Webioo Digital Agency.
+> Specializes in modern web development, e-commerce solutions, and interactive web experiences.
+
+## About
+
+Emre Öcel is a computer engineer and web developer who builds performant, accessible, and visually impressive web experiences. He works at Webioo Digital Agency (https://www.webioo.com.tr/), developing web design and e-commerce solutions for clients across Turkey.
+
+**Key expertise:**
+- Frontend: HTML5, CSS3, JavaScript, React, Vue.js, Three.js
+- Backend: PHP, Node.js, MySQL, MongoDB, REST API, .NET
+- Application: Java, C#, C++, C, Python
+
+## Main Pages
+
+- [Home](https://emreocell.github.io/) — Portfolio overview with interactive 3D scene, projects, skills, and contact form
+- [Blog](https://emreocell.github.io/blog/) — Articles about web development, technology, and software engineering
+- [About Section](https://emreocell.github.io/#about) — Background, education, work experience
+- [Projects Section](https://emreocell.github.io/#projects) — GitHub projects, client work, university thesis
+- [Skills Section](https://emreocell.github.io/#skills) — Technical skills across frontend, backend, and application development
+- [Contact Section](https://emreocell.github.io/#contact) — Contact form and social links
+
+## Blog Posts
+
+- [Modern Kurumsal Web Projelerinde Doğru Teknoloji Seçimi](https://emreocell.github.io/blog/kurumsal-web-projelerinde-teknoloji-secimi/) — Tech stack selection for corporate web projects: frameworks, databases, server architecture
+- [2025'te Başarılı Bir Web Sitesi İçin Olmazsa Olmaz 7 Teknik Kriter](https://emreocell.github.io/blog/basarili-web-sitesi-teknik-kriterler/) — Technical criteria for modern websites: Core Web Vitals, SEO, accessibility, security
+- [KOBİ'ler İçin E-Ticaret Rehberi](https://emreocell.github.io/blog/kobiler-icin-e-ticaret-rehberi/) — E-commerce platform selection, payment integration, SEO, and growth strategies for SMEs
+
+## Professional Context
+
+- **Employer:** Webioo Digital Agency (https://www.webioo.com.tr/)
+- **Services:** Web design (https://www.webioo.com.tr/web-tasarim), E-commerce (https://www.webioo.com.tr/e-ticaret)
+- **Education:** Fırat University — Computer Engineering (B.Sc.)
+- **Location:** Turkey
+- **Languages:** Turkish (native), English (professional)
+
+## Contact
+
+- GitHub: https://github.com/emreocell
+- LinkedIn: https://linkedin.com/in/emreocel
+- Email: emreocell1219@gmail.com
+
+## Technical Details
+
+This site is built with:
+- Jekyll (static site generator) hosted on GitHub Pages
+- Three.js for 3D graphics and particle effects
+- GSAP + ScrollTrigger for scroll-driven animations
+- i18next for TR/EN language switching
+- CSS custom properties for dark/light theme toggle
+- FormSubmit for serverless contact form
+
+The site is fully static with no server-side processing. All content is available in both Turkish and English.
+
+## Optional
+
+- [RSS Feed](https://emreocell.github.io/feed.xml)
+- [Sitemap](https://emreocell.github.io/sitemap.xml)
+- [robots.txt](https://emreocell.github.io/robots.txt)

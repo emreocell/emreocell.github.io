@@ -1,0 +1,54 @@
+# ============================================================
+# Proje Verileri — _data/projects.yml
+# Bu dosyayı kendi projelerinle doldur.
+# ============================================================
+
+# --- GitHub Projeleri ---
+github:
+  - name: "Portfolio Website"
+    description_tr: "Kişisel portfolyo sitesi — Jekyll, Three.js, GSAP ile geliştirildi."
+    description_en: "Personal portfolio website — Built with Jekyll, Three.js, GSAP."
+    url: "https://github.com/emreocell/emreocell.github.io"
+    language: "JavaScript"
+    stars: 0
+    tags: ["Jekyll", "Three.js", "GSAP", "CSS"]
+
+  - name: "Project 2"
+    description_tr: "Proje açıklamasını buraya yaz."
+    description_en: "Write project description here."
+    url: "https://github.com/emreocell/"
+    language: "Python"
+    stars: 0
+    tags: ["Python", "Flask"]
+
+# --- Webioo Müşteri Siteleri ---
+client:
+  - name: "Müşteri Sitesi 1"
+    description_tr: "E-ticaret çözümleri kapsamında geliştirilen modern alışveriş platformu."
+    description_en: "Modern shopping platform developed as part of e-commerce solutions."
+    url: "#"
+    image: "/assets/images/projects/client1.jpg"
+    tags: ["PHP", "MySQL", "E-Ticaret"]
+
+  - name: "Müşteri Sitesi 2"
+    description_tr: "Kurumsal web tasarım projesi."
+    description_en: "Corporate web design project."
+    url: "#"
+    image: "/assets/images/projects/client2.jpg"
+    tags: ["WordPress", "SEO", "Web Tasarım"]
+
+# --- Okul Projeleri ---
+school:
+  - name: "Bitirme Tezi"
+    description_tr: "Fırat Üniversitesi Bilgisayar Mühendisliği bitirme tezi. 90 sayfa kapsamlı araştırma ve uygulama."
+    description_en: "Fırat University Computer Engineering graduation thesis. 90 pages of comprehensive research and implementation."
+    pdf: "/assets/tez.pdf"
+    pages: 90
+    tags: ["Araştırma", "Bilgisayar Mühendisliği"]
+    is_thesis: true
+
+  - name: "Okul Projesi 1"
+    description_tr: "Ders kapsamında geliştirilen proje."
+    description_en: "Project developed as part of coursework."
+    url: "#"
+    tags: ["Java", "OOP"]

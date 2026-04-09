@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emre Öcel | Computer Engineer & Web Developer — Preview</title>
+  <meta name="description" content="Emre Öcel — Bilgisayar Mühendisi, Full Stack Web Geliştirici. Modern ve performanslı web deneyimleri.">
+
+  <!-- OG Tags -->
+  <meta property="og:title" content="Emre Öcel | Computer Engineer & Web Developer">
+  <meta property="og:description" content="Bilgisayar Mühendisi, Full Stack Web Geliştirici. Webioo Dijital Ajans bünyesinde modern web çözümleri geliştiriyorum.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://emreocell.github.io/">
+
+  <!-- Theme: prevent FOUC -->
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- 3D Scene -->
+  <div id="three-canvas-container" role="img" aria-label="3D interaktif arka plan animasyonu"></div>
+
+  <!-- Skip Link -->
+  <a class="skip-link" href="#main-content" id="skip-link">İçeriğe Geç</a>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#hero" class="site-logo" aria-label="Ana Sayfa">
+          emre<span>.</span>öcel
+        </a>
+
+        <nav class="main-nav" role="navigation" aria-label="Ana navigasyon">
+          <ul class="nav-links">
+            <li><a href="#about" data-i18n="nav.about">Hakkımda</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projeler</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Yetenekler</a></li>
+            <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
+          </ul>
+
+          <div class="header-controls">
+            <button class="control-btn lang-toggle" id="lang-toggle" aria-label="Dili değiştir" title="TR / EN">TR</button>
+            <button class="control-btn theme-toggle" id="theme-toggle" aria-label="Tema değiştir">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon-dark"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="theme-icon-light" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobil menü">
+    <a href="#about" data-i18n="nav.about">Hakkımda</a>
+    <a href="#projects" data-i18n="nav.projects">Projeler</a>
+    <a href="#skills" data-i18n="nav.skills">Yetenekler</a>
+    <a href="#blog" data-i18n="nav.blog">Blog</a>
+    <a href="#contact" data-i18n="nav.contact">İletişim</a>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content" role="main">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="hero-label" data-i18n="hero.label">// Merhaba, Ben</p>
+        <h1 data-i18n="hero.title">Emre Öcel</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Bilgisayar Mühendisi &amp; Web Geliştirici</p>
+        <p class="hero-subtitle" style="font-size:clamp(0.9rem,1.3vw,1.05rem);margin-top:-1rem;opacity:0;transform:translateY(25px);" data-i18n="hero.description">
+          Modern, performanslı ve etkileyici web deneyimleri tasarlıyor ve geliştiriyorum.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.projects">Projelerimi Gör</a>
+          <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta.contact">İletişime Geç</a>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-mouse"></div>
+        <span data-i18n="hero.scroll">Kaydır</span>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="about.label">// Hakkımda</span>
+          <h2 data-i18n="about.title">Kim Olduğumu Keşfedin</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal-left">
+            <p data-i18n="about.p1">Fırat Üniversitesi Bilgisayar Mühendisliği mezunuyum. Yazılım geliştirme süreçlerinde kullanıcı deneyimini ön planda tutan, performanslı ve ölçeklenebilir çözümler üretmeye odaklanıyorum.</p>
+            <p data-i18n="about.p2">
+              <a href="https://www.webioo.com.tr/" target="_blank" rel="noopener">Webioo Dijital Ajans</a> bünyesinde geliştirdiğim projelerde
+              <a href="https://www.webioo.com.tr/web-tasarim" target="_blank" rel="noopener">web tasarım hizmetleri</a> ve
+              <a href="https://www.webioo.com.tr/e-ticaret" target="_blank" rel="noopener">e-ticaret çözümleri</a> üzerine kapsamlı deneyim kazandım.
+            </p>
+            <p data-i18n="about.p3">
+              <a href="https://www.webioo.com.tr/samsun-web-tasarim" target="_blank" rel="noopener">Samsun</a> merkezli çalışmalarımda kurumsal web projeleri, mobil uygulamalar ve dijital dönüşüm süreçlerinde aktif rol alıyorum.
+            </p>
+          </div>
+
+          <div class="about-stats reveal-right">
+            <div class="stat-card"><div class="stat-number" data-count="20">20+</div><div class="stat-label" data-i18n="about.stat.projects">Proje</div></div>
+            <div class="stat-card"><div class="stat-number" data-count="3">3+</div><div class="stat-label" data-i18n="about.stat.experience">Yıl Deneyim</div></div>
+            <div class="stat-card"><div class="stat-number" data-count="15">15+</div><div class="stat-label" data-i18n="about.stat.technologies">Teknoloji</div></div>
+            <div class="stat-card"><div class="stat-number" data-count="10">10+</div><div class="stat-label" data-i18n="about.stat.clients">Müşteri</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="projects.label">// Portfolio</span>
+          <h2 data-i18n="projects.title">Projelerim</h2>
+          <div class="section-divider"></div>
+          <p data-i18n="projects.subtitle">Geliştirdiğim projelerden bazıları.</p>
+        </div>
+
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all" data-i18n="projects.filter.all">Tümü</button>
+          <button class="filter-btn" data-filter="github" data-i18n="projects.filter.github">GitHub</button>
+          <button class="filter-btn" data-filter="client" data-i18n="projects.filter.client">Müşteri</button>
+          <button class="filter-btn" data-filter="school" data-i18n="projects.filter.school">Okul</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- GitHub -->
+          <div class="project-card" data-category="github">
+            <div class="project-card-body">
+              <h3>Portfolio Website</h3>
+              <p>Kişisel portfolyo sitesi — Jekyll, Three.js, GSAP ile geliştirildi.</p>
+              <div class="project-tags"><span class="project-tag">Jekyll</span><span class="project-tag">Three.js</span><span class="project-tag">GSAP</span></div>
+              <div class="project-links">
+                <a href="https://github.com/emreocell" target="_blank" rel="noopener" data-i18n="projects.viewCode">Kodu Gör</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Client -->
+          <div class="project-card" data-category="client">
+            <div class="project-card-body">
+              <h3>Webioo Müşteri Projesi</h3>
+              <p><a href="https://www.webioo.com.tr/e-ticaret" target="_blank" rel="noopener">E-ticaret çözümleri</a> kapsamında geliştirilen modern alışveriş platformu.</p>
+              <div class="project-tags"><span class="project-tag">PHP</span><span class="project-tag">MySQL</span><span class="project-tag">E-Ticaret</span></div>
+            </div>
+          </div>
+
+          <!-- Thesis -->
+          <div class="project-card thesis-card" data-category="school">
+            <div class="project-card-body">
+              <span class="thesis-badge">🎓 Bitirme Tezi — 90 Sayfa</span>
+              <h3>Bitirme Tezi</h3>
+              <p>Fırat Üniversitesi Bilgisayar Mühendisliği bitirme tezi. 90 sayfa kapsamlı araştırma ve uygulama.</p>
+              <div class="project-tags"><span class="project-tag">Araştırma</span><span class="project-tag">Bilgisayar Mühendisliği</span></div>
+              <div class="project-links">
+                <a href="assets/tez.pdf" target="_blank" rel="noopener" data-i18n="projects.download">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  PDF İndir
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="reveal" style="text-align:center;margin-top:2rem;font-size:.88rem;color:var(--text-tertiary);" data-i18n="projects.ecommerce.note">
+          Bu projelerde <a href="https://www.webioo.com.tr/e-ticaret" target="_blank" rel="noopener">e-ticaret çözümleri</a> kapsamında kapsamlı geliştirmeler yaptım.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="skills.label">// Teknolojiler</span>
+          <h2 data-i18n="skills.title">Yeteneklerim</h2>
+          <div class="section-divider"></div>
+          <p data-i18n="skills.subtitle">Uzmanlaştığım teknolojiler ve araçlar.</p>
+        </div>
+
+        <div class="skills-categories">
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span data-i18n="skills.frontend">Frontend</span>
+            </h3>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">HTML5</div><div class="skill-bar"><div class="skill-bar-fill" data-level="95"></div></div></div></div>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">CSS3 / SASS</div><div class="skill-bar"><div class="skill-bar-fill" data-level="92"></div></div></div></div>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">JavaScript</div><div class="skill-bar"><div class="skill-bar-fill" data-level="88"></div></div></div></div>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">React</div><div class="skill-bar"><div class="skill-bar-fill" data-level="78"></div></div></div></div>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">Three.js</div><div class="skill-bar"><div class="skill-bar-fill" data-level="65"></div></div></div></div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <span data-i18n="skills.backend">Backend</span>
+            </h3>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">PHP</div><div class="skill-bar"><div class="skill-bar-fill" data-level="90"></div></div></div></div>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">Node.js</div><div class="skill-bar"><div class="skill-bar-fill" data-level="80"></div></div></div></div>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">MySQL</div><div class="skill-bar"><div class="skill-bar-fill" data-level="88"></div></div></div></div>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">REST API</div><div class="skill-bar"><div class="skill-bar-fill" data-level="85"></div></div></div></div>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">.NET</div><div class="skill-bar"><div class="skill-bar-fill" data-level="75"></div></div></div></div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/></svg>
+              <span data-i18n="skills.app">Uygulama</span>
+            </h3>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">Java</div><div class="skill-bar"><div class="skill-bar-fill" data-level="85"></div></div></div></div>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">C#</div><div class="skill-bar"><div class="skill-bar-fill" data-level="80"></div></div></div></div>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">C++</div><div class="skill-bar"><div class="skill-bar-fill" data-level="70"></div></div></div></div>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">C</div><div class="skill-bar"><div class="skill-bar-fill" data-level="75"></div></div></div></div>
+            <div class="skill-item"><div class="skill-info"><div class="skill-name">Python</div><div class="skill-bar"><div class="skill-bar-fill" data-level="75"></div></div></div></div>
+          </div>
+        </div>
+
+        <p class="reveal" style="text-align:center;margin-top:2.5rem;font-size:.88rem;color:var(--text-tertiary);" data-i18n="skills.webdesign">
+          <a href="https://www.webioo.com.tr/web-tasarim" target="_blank" rel="noopener">Web tasarım hizmetleri</a> kapsamında bu teknolojileri aktif olarak kullanıyorum.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== BLOG ========== -->
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="blog.label">// Blog</span>
+          <h2 data-i18n="blog.title">Son Yazılar</h2>
+          <div class="section-divider"></div>
+          <p data-i18n="blog.subtitle">Teknoloji, geliştirme ve deneyimlerim hakkında yazıyorum.</p>
+        </div>
+
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card" style="cursor: pointer;" onclick="alert('Lokal önizlemede (Python) Markdown dosyaları okunmaz. Lütfen tasarımı inceleyin. Canlıda GitHub üzerinden çalışacaktır.');">
+            <div class="blog-card-image">
+              <img src="/assets/images/blog/techstack.jpg" alt="Modern Kurumsal Web Projelerinde Doğru Teknoloji Seçimi">
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-card-meta">
+                <span class="blog-card-date">09.04.2026</span>
+                <span class="blog-card-lang">TR</span>
+              </div>
+              <h3><a href="javascript:void(0);">Modern Kurumsal Web Projelerinde Doğru Teknoloji (Tech Stack) Seçimi</a></h3>
+              <p>Bir bilgisayar mühendisi olarak kurumsal web projelerinde ve e-ticaret altyapılarında framework, veritabanı ve sunucu mimarisi seçerken...</p>
+            </div>
+          </article>
+
+          <article class="blog-card" style="cursor: pointer;" onclick="alert('Lokal önizlemede (Python) Markdown dosyaları okunmaz. Lütfen tasarımı inceleyin. Canlıda GitHub üzerinden çalışacaktır.');">
+            <div class="blog-card-image">
+              <img src="/assets/images/blog/performance.jpg" alt="Başarılı Web Sitesi Teknik Kriterleri">
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-card-meta">
+                <span class="blog-card-date">05.04.2025</span>
+                <span class="blog-card-lang">TR</span>
+              </div>
+              <h3><a href="javascript:void(0);">2025'te Başarılı Bir Web Sitesi İçin Olmazsa Olmaz 7 Teknik Kriter</a></h3>
+              <p>Web geliştirme dünyası her zamankinden hızla evriliyor. Birkaç yıl önce iyi sayılan bir web sitesi...</p>
+            </div>
+          </article>
+
+          <article class="blog-card" style="cursor: pointer;" onclick="alert('Lokal önizlemede (Python) Markdown dosyaları okunmaz. Lütfen tasarımı inceleyin. Canlıda GitHub üzerinden çalışacaktır.');">
+            <div class="blog-card-image">
+              <img src="/assets/images/blog/ecommerce.jpg" alt="E-Ticaret Rehberi">
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-card-meta">
+                <span class="blog-card-date">20.03.2025</span>
+                <span class="blog-card-lang">TR</span>
+              </div>
+              <h3><a href="javascript:void(0);">KOBİ'ler İçin E-Ticaret: Doğru Platformu Seçmek ve İlk Satışa Ulaşmak</a></h3>
+              <p>Türkiye'de e-ticaret hacmi her yıl büyüyor. Ancak e-ticarete başlamak ile sürdürülebilir başarı yakalamak...</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="blog-cta reveal" style="margin-top:2.5rem;">
+          <a href="javascript:void(0);" onclick="alert('Blog arşivi lokal sunucuda derlenmez.');" class="btn btn-ghost" data-i18n="blog.viewAll">Tüm Yazıları Gör</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label" data-i18n="contact.label">// İletişim</span>
+          <h2 data-i18n="contact.title">Birlikte Çalışalım</h2>
+          <div class="section-divider"></div>
+          <p data-i18n="contact.subtitle">Projeniz için benimle iletişime geçin.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <h3 data-i18n="contact.info.title">İletişim Bilgileri</h3>
+            <p data-i18n="contact.info.text">Yeni projeler, freelance çalışmalar veya iş birlikleri için her zaman açığım. Formu doldurun veya sosyal medya üzerinden ulaşın.</p>
+            <div class="social-links" style="margin-top:1.5rem;">
+              <a href="https://github.com/emreocell" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/emreocel" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="mailto:emreocell1219@gmail.com" class="social-link" aria-label="Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="reveal-right">
+            <form class="contact-form" action="https://formsubmit.co/emreocell1219@gmail.com" method="POST" id="contact-form">
+              <input type="text" name="_honey" style="position:absolute;left:-9999px;opacity:0;" tabindex="-1" autocomplete="off">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://emreocell.github.io/#contact">
+
+              <div class="form-group">
+                <label for="name" data-i18n="contact.form.name">Adınız</label>
+                <input type="text" id="name" name="name" required placeholder="Adınızı yazın..." data-i18n-placeholder="contact.form.namePh">
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="contact.form.email">E-posta</label>
+                <input type="email" id="email" name="email" required placeholder="ornek@email.com" data-i18n-placeholder="contact.form.emailPh">
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="contact.form.message">Mesajınız</label>
+                <textarea id="message" name="message" required placeholder="Projeniz hakkında bilgi verin..." data-i18n-placeholder="contact.form.messagePh"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" data-i18n="contact.form.send">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Gönder
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="site-logo">emre<span>.</span>öcel</a>
+          <p data-i18n="footer.description">
+            <a href="https://www.webioo.com.tr/" target="_blank" rel="noopener">Webioo Dijital Ajans</a>
+            bünyesinde web geliştirici olarak çalışıyorum. Modern ve performanslı web çözümleri üretiyorum.
+            <a href="https://www.webioo.com.tr/istanbul-web-tasarim" target="_blank" rel="noopener">İstanbul</a> ve Türkiye genelinde projeler geliştiriyorum.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading" data-i18n="footer.navigation">Navigasyon</h4>
+          <ul class="footer-links">
+            <li><a href="#about" data-i18n="nav.about">Hakkımda</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projeler</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Yetenekler</a></li>
+            <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading" data-i18n="footer.services">Hizmetler</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.webioo.com.tr/web-tasarim" target="_blank" rel="noopener" data-i18n="footer.webDesign">Web Tasarım</a></li>
+            <li><a href="https://www.webioo.com.tr/e-ticaret" target="_blank" rel="noopener" data-i18n="footer.ecommerce">E-Ticaret Çözümleri</a></li>
+            <li><a href="https://www.webioo.com.tr/samsun-web-tasarim" target="_blank" rel="noopener" data-i18n="footer.samsun">Samsun Web Tasarım</a></li>
+            <li><a href="https://www.webioo.com.tr/istanbul-web-tasarim" target="_blank" rel="noopener" data-i18n="footer.istanbul">İstanbul Web Tasarım</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Emre Öcel. <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></p>
+        <p><span data-i18n="footer.builtWith">Geliştirildi:</span> <a href="https://www.webioo.com.tr/" target="_blank" rel="noopener">Webioo</a> · <a href="https://github.com/emreocell" target="_blank" rel="noopener">GitHub</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CDN Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/i18next@23.16.0/dist/umd/i18next.min.js"></script>
+
+  <!-- App Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/i18n.js"></script>
+  <script type="module" src="assets/js/three-scene.js"></script>
+
+</body>
+</html>

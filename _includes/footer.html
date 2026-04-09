@@ -1,0 +1,53 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand & Description -->
+      <div class="footer-brand">
+        <a href="{{ '/' | relative_url }}" class="site-logo">emre<span>.</span>öcel</a>
+        <p data-i18n="footer.description">
+          <a href="https://www.webioo.com.tr/" target="_blank" rel="noopener">Webioo Dijital Ajans</a>
+          bünyesinde web geliştirici olarak çalışıyorum. Modern ve performanslı web çözümleri üretiyorum.
+          <a href="https://www.webioo.com.tr/istanbul-web-tasarim" target="_blank" rel="noopener">İstanbul</a> ve
+          Türkiye genelinde projeler geliştiriyorum.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading" data-i18n="footer.navigation">Navigasyon</h4>
+        <ul class="footer-links">
+          <li><a href="#about" data-i18n="nav.about">Hakkımda</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projeler</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Yetenekler</a></li>
+          <li><a href="{{ '/blog/' | relative_url }}" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">İletişim</a></li>
+        </ul>
+      </div>
+
+      <!-- Services / Backlinks -->
+      <div class="footer-col">
+        <h4 class="footer-heading" data-i18n="footer.services">Hizmetler</h4>
+        <ul class="footer-links">
+          <li><a href="https://www.webioo.com.tr/web-tasarim" target="_blank" rel="noopener" data-i18n="footer.webDesign">Web Tasarım</a></li>
+          <li><a href="https://www.webioo.com.tr/e-ticaret" target="_blank" rel="noopener" data-i18n="footer.ecommerce">E-Ticaret Çözümleri</a></li>
+          <li><a href="https://www.webioo.com.tr/samsun-web-tasarim" target="_blank" rel="noopener" data-i18n="footer.samsun">Samsun Web Tasarım</a></li>
+          <li><a href="https://www.webioo.com.tr/istanbul-web-tasarim" target="_blank" rel="noopener" data-i18n="footer.istanbul">İstanbul Web Tasarım</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>
+        &copy; {{ site.time | date: '%Y' }} Emre Öcel.
+        <span data-i18n="footer.rights">Tüm hakları saklıdır.</span>
+      </p>
+      <p>
+        <span data-i18n="footer.builtWith">Geliştirildi:</span>
+        <a href="https://www.webioo.com.tr/" target="_blank" rel="noopener">Webioo</a>
+        ·
+        <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </div>
+</footer>
