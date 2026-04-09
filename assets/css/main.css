@@ -774,6 +774,10 @@ code, pre {
   line-height: 1.5;
 }
 
+.thesis-card {
+  order: -1;
+}
+
 .thesis-badge {
   display: inline-block;
   background: var(--bg-secondary);

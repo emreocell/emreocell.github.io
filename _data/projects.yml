@@ -9,6 +9,7 @@ github:
     description_tr: "Kişisel portfolyo sitesi — Jekyll, Three.js, GSAP ile geliştirildi."
     description_en: "Personal portfolio website — Built with Jekyll, Three.js, GSAP."
     url: "https://github.com/emreocell/emreocell.github.io"
+    image: "/assets/images/projects/mysite.jpg"
     language: "JavaScript"
     stars: 0
     tags: ["Jekyll", "Three.js", "GSAP", "CSS"]
@@ -17,6 +18,7 @@ github:
     description_tr: "Proje açıklamasını buraya yaz."
     description_en: "Write project description here."
     url: "https://github.com/emreocell/"
+    image: "/assets/images/projects/project_2.png"
     language: "Python"
     stars: 0
     tags: ["Python", "Flask"]
@@ -37,6 +39,20 @@ client:
     image: "/assets/images/projects/client2.jpg"
     tags: ["WordPress", "SEO", "Web Tasarım"]
 
+  - name: "Müşteri Sitesi 3"
+    description_tr: "Kurumsal dijital dönüşüm ve performans optimizasyonu."
+    description_en: "Corporate digital transformation and performance optimization."
+    url: "#"
+    image: "/assets/images/projects/client3.jpg"
+    tags: ["Web Geliştirme", "Performans"]
+
+  - name: "Müşteri Sitesi 4"
+    description_tr: "Özel yazılım çözümleri ve yönetim paneli."
+    description_en: "Custom software solutions and management panel."
+    url: "#"
+    image: "/assets/images/projects/client4.jpg"
+    tags: ["Backend", "Panel"]
+
 # --- Okul Projeleri ---
 school:
   - name: "Bitirme Tezi"
@@ -51,4 +67,5 @@ school:
     description_tr: "Ders kapsamında geliştirilen proje."
     description_en: "Project developed as part of coursework."
     url: "#"
+    image: "/assets/images/projects/school_1.png"
     tags: ["Java", "OOP"]

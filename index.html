@@ -103,6 +103,11 @@ lang: tr
       <!-- GitHub Projects -->
       {% for project in site.data.projects.github %}
       <div class="project-card" data-category="github">
+        {% if project.image %}
+        <div class="project-card-image">
+          <img src="{{ project.image }}" alt="{{ project.name }}" loading="lazy">
+        </div>
+        {% endif %}
         <div class="project-card-body">
           <h3>{{ project.name }}</h3>
           <p class="project-desc-tr">{{ project.description_tr }}</p>
@@ -156,6 +161,11 @@ lang: tr
       <!-- School Projects -->
       {% for project in site.data.projects.school %}
       <div class="project-card {% if project.is_thesis %}thesis-card{% endif %}" data-category="school">
+        {% if project.image %}
+        <div class="project-card-image">
+          <img src="{{ project.image }}" alt="{{ project.name }}" loading="lazy">
+        </div>
+        {% endif %}
         <div class="project-card-body">
           {% if project.is_thesis %}
           <span class="thesis-badge">🎓 Bitirme Tezi — {{ project.pages }} Sayfa</span>
