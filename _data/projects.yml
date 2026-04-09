@@ -53,6 +53,13 @@ client:
     image: "/assets/images/projects/client4.jpg"
     tags: ["Backend", "Panel"]
 
+  - name: "Etik Matematik"
+    description_tr: "Birebir online eğitim platformu için modern web tasarımı ve kullanıcı arayüzü."
+    description_en: "Modern web design and user interface for one-on-one online education platform."
+    url: "https://etikmatematik.com"
+    image: "/assets/images/projects/etikmatematik.jpg"
+    tags: ["Web Tasarım", "Eğitim"]
+
 # --- Okul Projeleri ---
 school:
   - name: "Bitirme Tezi"
